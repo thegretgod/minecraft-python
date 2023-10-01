@@ -375,3 +375,28 @@ def fireworks(*args, **kwargs):
     fwm.addEffect(fwe)
     fwm.setPower(r['power'])
     fw.setFireworkMeta(fwm)
+# Encryption function
+def encrypt(text, key):
+    encrypted_text = ""
+    for char in text:
+        encrypted_text += chr(ord(char) + key)
+    return encrypted_text
+
+# Decryption function
+def decrypt(encrypted_text, key):
+    decrypted_text = ""
+    for char in encrypted_text:
+        decrypted_text += chr(ord(char) - key)
+    return decrypted_text
+
+# User input
+text = input("Enter a message: ")
+key = int(input("Enter an encryption/decryption key: "))
+
+# Encrypt the text
+encrypted_message = encrypt(text, key)
+print(f"Encrypted Message: {encrypted_message}")
+
+# Decrypt the text
+decrypted_message = decrypt(encrypted_message, key)
+print(f"Decrypted Message: {decrypted_message}")
