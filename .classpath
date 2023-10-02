@@ -33,14 +33,5 @@ if (num % 2) == 0:
 else:
    print("{0} is Odd".format(num))
 
-This program simulates a student management system with options to add, view, update, and delete student records. You can copy and paste this code into a Python environment to use it.
-
-
-
-
-This program simulates a student management system with options to add, view, update, and delete student records. You can copy and paste this code into a Python environment to use it.
-
-
-
 
 
